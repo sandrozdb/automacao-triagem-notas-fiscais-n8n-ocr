@@ -232,6 +232,7 @@ Durante o desenvolvimento deste projeto, foram aplicados conhecimentos de:
 **Sandro Ferreira**
 
 Estudante de Engenharia da Computação
+
 Estudante de Inteligência Artificial e Automação Digital
 
 📧 E-mail: [sandrozdb@gmail.com](mailto:sandrozdb@gmail.com)
