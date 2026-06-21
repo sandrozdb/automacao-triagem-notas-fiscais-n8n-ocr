@@ -1,1 +1,87 @@
-
+{
+"name": "Automacao Triagem Notas Fiscais OCR",
+"description": "Modelo conceitual de workflow n8n para automação de triagem de notas fiscais utilizando OCR, Python e banco de dados.",
+"version": "1.0",
+"author": "Sandro Ferreira",
+"project": "Automação de Triagem de Notas Fiscais com n8n e OCR",
+"nodes": [
+{
+"id": "1",
+"name": "Receber Nota Fiscal",
+"type": "Manual Trigger",
+"description": "Inicia o fluxo com o recebimento de uma nota fiscal em PDF ou imagem."
+},
+{
+"id": "2",
+"name": "Ler Documento com OCR",
+"type": "OCR Processing",
+"description": "Realiza a leitura do documento e extrai o texto da nota fiscal."
+},
+{
+"id": "3",
+"name": "Extrair Informações",
+"type": "Data Extraction",
+"description": "Identifica campos importantes como número da nota, CNPJ, data de emissão, fornecedor e valor total."
+},
+{
+"id": "4",
+"name": "Tratar Dados com Python",
+"type": "Python Script",
+"description": "Organiza, limpa e padroniza as informações extraídas pelo OCR."
+},
+{
+"id": "5",
+"name": "Validar Informações",
+"type": "IF",
+"description": "Verifica se os dados obrigatórios foram encontrados corretamente."
+},
+{
+"id": "6",
+"name": "Salvar no Banco de Dados",
+"type": "Database",
+"description": "Armazena os dados processados em uma tabela estruturada."
+},
+{
+"id": "7",
+"name": "Gerar Registro de Controle",
+"type": "Report",
+"description": "Registra o status da nota fiscal processada para consulta e acompanhamento."
+}
+],
+"connections": [
+{
+"from": "Receber Nota Fiscal",
+"to": "Ler Documento com OCR"
+},
+{
+"from": "Ler Documento com OCR",
+"to": "Extrair Informações"
+},
+{
+"from": "Extrair Informações",
+"to": "Tratar Dados com Python"
+},
+{
+"from": "Tratar Dados com Python",
+"to": "Validar Informações"
+},
+{
+"from": "Validar Informações",
+"to": "Salvar no Banco de Dados"
+},
+{
+"from": "Salvar no Banco de Dados",
+"to": "Gerar Registro de Controle"
+}
+],
+"status": "conceptual_model",
+"future_improvements": [
+"Integração com Gmail",
+"Integração com Google Drive",
+"Validação automática de CNPJ",
+"Integração com ERP",
+"Dashboard em Power BI",
+"Classificação automática de documentos",
+"Alertas para notas inconsistentes"
+]
+}
