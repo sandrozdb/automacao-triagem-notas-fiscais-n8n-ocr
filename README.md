@@ -29,7 +29,7 @@ flowchart TD
 
 ## Visão demonstrativa do workflow
 
-![Visão conceitual da triagem inteligente de notas fiscais](assets/visao-conceitual-workflow.svg)
+![Visão conceitual da triagem inteligente de notas fiscais](assets/workflow-demonstrativo.svg)
 
 > Esta imagem é uma **representação conceitual** do processo. No workflow importável atual, o OCR, o armazenamento e as notificações são simulados com nós `Set`, permitindo testar publicamente a lógica sem credenciais ou serviços externos.
 
