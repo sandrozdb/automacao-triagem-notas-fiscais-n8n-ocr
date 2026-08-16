@@ -57,7 +57,7 @@ A arte detalha o comportamento planejado de ponta a ponta. O JSON exportado cont
 
 - workflow n8n disponível em `workflow/fluxo-n8n.json`;
 - módulos Python separados por responsabilidade;
-- execução demonstrável mesmo sem banco ou Tesseract;
+- execução demonstrável com OCR, persistência e notificações simulados;
 - credenciais e arquivos `.env` protegidos;
 - estrutura preparada para integração com e-mail, ERP e dashboards.
 
@@ -85,7 +85,7 @@ pip install -r requirements.txt
 python src/main.py
 ```
 
-A demonstração funciona sem banco de dados e sem Tesseract. Para OCR real, instale o Tesseract OCR. Para persistência, configure localmente:
+Nesta simulação demonstrativa, a leitura OCR e a persistência são representadas por dados fictícios e respostas controladas. Para evoluir o protótipo para uma integração real, instale o Tesseract OCR e configure localmente:
 
 ```env
 DB_HOST=
