@@ -1,3 +1,23 @@
+<p align="center"><img src="assets/cover.svg" alt="Automação de triagem de notas fiscais" width="100%"></p>
+
+## 🔎 Resumo executivo
+
+Solução acadêmica que transforma um processo manual de conferência fiscal em um pipeline automatizado: entrada do documento, OCR, extração estruturada, validação, decisão e persistência. O projeto demonstra como automação e dados podem reduzir retrabalho e criar rastreabilidade operacional.
+
+**Diferenciais:** workflow n8n importável, módulos Python separados por responsabilidade, validação automática e documentação reproduzível.
+
+### Indicadores recomendados
+
+| Indicador | O que demonstra |
+| --- | --- |
+| Tempo médio por documento | Ganho de produtividade |
+| Taxa de extração automática | Eficiência do OCR e das regras |
+| Percentual de revisão manual | Qualidade do processamento |
+| Taxa de erros por campo | Confiabilidade dos dados |
+| Volume processado por período | Capacidade operacional |
+
+> Os indicadores representam a forma correta de avaliar um piloto. O repositório não declara ganhos numéricos sem medição real.
+
 # 📄 Automação de Triagem de Notas Fiscais com n8n e OCR
 
 ## 📌 Sobre o Projeto
