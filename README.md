@@ -238,3 +238,32 @@ Estudante de Inteligência Artificial e Automação Digital
 📧 E-mail: [sandrozdb@gmail.com](mailto:sandrozdb@gmail.com)
 💼 LinkedIn: https://linkedin.com/in/sandrozdb
 🐙 GitHub: https://github.com/sandrozdb
+
+---
+
+## ▶️ Como Executar
+
+```bash
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+pip install -r requirements.txt
+python src/main.py
+```
+
+A demonstração funciona sem banco de dados e sem Tesseract instalados. Para OCR real, instale o Tesseract OCR no sistema. Para persistência, configure `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD` e `DB_NAME` em um arquivo `.env` local.
+
+### Importar o workflow no n8n
+
+1. Abra o n8n e selecione **Import from File**.
+2. Escolha `workflow/fluxo-n8n.json`.
+3. Execute o gatilho manual.
+4. Confira os dados extraídos e o status de validação.
+
+O workflow é uma demonstração importável e não contém credenciais.
+
+## 🔐 Segurança e qualidade
+
+- Credenciais e arquivos `.env` não são versionados.
+- A validação automática em GitHub Actions verifica a sintaxe e executa a demonstração Python.
+- Nunca publique senhas, chaves de API ou documentos fiscais reais.
