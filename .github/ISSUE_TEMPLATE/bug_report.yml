@@ -1,0 +1,30 @@
+name: Relatar problema
+description: Informe um erro reproduzível no projeto
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: O que aconteceu?
+      description: Descreva o comportamento observado.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduzir
+    attributes:
+      label: Como reproduzir?
+      description: Liste os passos necessários.
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: ambiente
+    attributes:
+      label: Ambiente
+      description: Sistema operacional, versão e ferramentas utilizadas.

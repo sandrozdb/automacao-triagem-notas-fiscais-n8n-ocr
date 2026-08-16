@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">Automação de Notas Fiscais</title><desc id="desc">Capa do projeto com Python, n8n e OCR</desc>
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071a2e"/><stop offset="1" stop-color="#0b7a75"/></linearGradient></defs>
+  <rect width="1280" height="360" rx="28" fill="url(#g)"/><circle cx="1130" cy="70" r="190" fill="#34d399" opacity=".12"/><circle cx="1050" cy="330" r="150" fill="#38bdf8" opacity=".10"/>
+  <text x="70" y="105" fill="#5eead4" font-family="Arial, sans-serif" font-size="24" font-weight="700">AUTOMAÇÃO • DADOS • EFICIÊNCIA</text>
+  <text x="70" y="180" fill="white" font-family="Arial, sans-serif" font-size="54" font-weight="700">Triagem de Notas Fiscais</text>
+  <text x="70" y="235" fill="#dbeafe" font-family="Arial, sans-serif" font-size="28">Pipeline com n8n, OCR, Python e MySQL</text>
+  <rect x="70" y="275" width="125" height="42" rx="21" fill="#10b981"/><text x="98" y="303" fill="white" font-family="Arial" font-size="20" font-weight="700">PYTHON</text>
+  <rect x="210" y="275" width="90" height="42" rx="21" fill="#f97316"/><text x="235" y="303" fill="white" font-family="Arial" font-size="20" font-weight="700">n8n</text>
+  <rect x="315" y="275" width="88" height="42" rx="21" fill="#0284c7"/><text x="340" y="303" fill="white" font-family="Arial" font-size="20" font-weight="700">OCR</text>
+</svg>
