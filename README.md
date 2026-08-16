@@ -27,6 +27,24 @@ flowchart TD
     D -->|Não| F[Revisão manual]
 ```
 
+## Visão demonstrativa do workflow
+
+![Visão conceitual da triagem inteligente de notas fiscais](assets/visao-conceitual-workflow.svg)
+
+> Esta imagem é uma **representação conceitual** do processo. No workflow importável atual, o OCR, o armazenamento e as notificações são simulados com nós `Set`, permitindo testar publicamente a lógica sem credenciais ou serviços externos.
+
+| Parte do fluxo | Estado atual |
+|---|---|
+| Entrada | Acionamento manual |
+| OCR | Dados fiscais simulados |
+| Validação | Regra funcional: valor maior que zero |
+| Decisão | Rotas de aprovação e rejeição |
+| Banco de dados | Resposta simulada |
+| Notificações | Resposta simulada |
+| Produção | Preparado para integrar OCR, banco e e-mail reais |
+
+A arte detalha o comportamento planejado de ponta a ponta. O JSON exportado contém **7 nós funcionais e 4 notas visuais**; por isso, ela não deve ser interpretada como captura literal da tela do n8n.
+
 ## Dados processados
 
 - número e data da nota;
@@ -94,6 +112,7 @@ O workflow não contém credenciais.
 ├── workflow/             # workflow importável do n8n
 ├── database/             # estrutura SQL
 ├── examples/             # arquivos de demonstração
+├── assets/               # capa e visão conceitual do fluxo
 ├── requirements.txt
 └── README.md
 ```
@@ -106,7 +125,8 @@ O workflow não contém credenciais.
 
 ## Próximos passos
 
-- adicionar evidências visuais do workflow;
+- substituir as simulações por OCR, banco e notificações reais;
+- adicionar uma captura da execução real no n8n;
 - validar CNPJ automaticamente;
 - integrar com e-mail e ERP;
 - criar dashboard operacional;
