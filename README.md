@@ -27,9 +27,11 @@ flowchart TD
     D -->|Não| F[Revisão manual]
 ```
 
-## Visão demonstrativa do workflow
+## Arquitetura do workflow
 
-![Visão conceitual da triagem inteligente de notas fiscais](assets/workflow-demonstrativo.svg)
+![Arquitetura conceitual da triagem inteligente de notas fiscais](assets/workflow-demonstrativo.svg)
+
+*Diagrama conceitual do fluxo implementado. A imagem documenta a sequência dos nós e as rotas de aprovação e rejeição; não representa uma captura da interface do n8n.*
 
 > Esta imagem é uma **representação conceitual** do processo. No workflow importável atual, o OCR, o armazenamento e as notificações são simulados com nós `Set`, permitindo testar publicamente a lógica sem credenciais ou serviços externos.
 
